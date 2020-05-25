@@ -1,0 +1,7 @@
+<div class="home-logo"></div>
+<div class="search-container">
+    <form #searchForm="ngForm" (ngSubmit)="findBooks(searchWord.value)">
+      <input #searchWord="ngModel" type="text" ngModel name="searchQuery" id="searchQuery" placeholder="Search.." name="search" required>
+      <button [disabled]="searchForm.invalid" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>

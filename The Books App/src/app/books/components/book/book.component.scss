@@ -1,0 +1,18 @@
+.book-props{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.currentBook{
+    display: flex;
+    margin: 1rem auto;
+}
+
+.book-img-container img{
+       min-width: 8rem;
+       width: 8rem;
+       height: 11rem;
+       min-height: 4rem;
+}

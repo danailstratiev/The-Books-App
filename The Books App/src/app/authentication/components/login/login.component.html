@@ -1,0 +1,38 @@
+<div class="login-pic">
+
+</div>
+<form class="login-form" #loginForm="ngForm" (ngSubmit)="submitLoginForm(emailInput.value, passwordInput.value)">    
+    <fieldset>
+        <div class="legendary">
+            <legend>Sign in</legend>  
+        </div>
+    <div class="usernameDiv">
+        <p>
+            <label for="email">Email</label>
+        </p>
+        <div class="myusername">
+            <div>       
+                <i class="fas fa-user"></i>          
+                <input #emailInput="ngModel" id="email" type="text" ngModel name="email" 
+                [pattern]="emailRegex" required>
+            </div>
+            <p class="error-msg" *ngIf="emailInput?.errors?.pattern">Invalid email format</p>
+        </div>
+    </div>
+    <div class="passwordDiv">
+        <p>
+            <label for="password">Password</label>
+        </p>
+        <div class="mypassword">
+            <div>
+                <i class="fas fa-key"></i>
+                <input  #passwordInput="ngModel" required minlength="6" type="password" name="password" ngModel id="password" required> 
+            </div> 
+            <p class="error-msg" *ngIf="passwordInput?.errors?.required">Password must be at least 6 symbols long</p>
+        </div>               
+    </div>
+    <div class="login-form-btns">
+        <button id="login-btn" [disabled]="loginForm.invalid">Sign In</button>
+    </div>    
+    </fieldset>
+</form>

@@ -1,0 +1,12 @@
+<div class="currentBook">
+    <span *ngIf="book" class="book-img-container">
+        <img class="book-img" [src]="book?.volumeInfo?.imageLinks?.thumbnail" alt="book-image"
+            onerror="this.onerror=null;this.src='data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAABMBAMAAADO7rnHAAAAFVBMVEUAAAAqKipVVVV/f3+qqqrU1NT///9hGrwNAAAACXBIWXMCoFHMAqBRzAGwzHPCAAAAH0lEQVRIiWNIwwcYRmVHZUdlR2VHZUdlR2VHZYesLAB4MW5Wzpj11gAAAABJRU5ErkJggg==';"
+        />
+    </span>
+    <div class="book-props">
+        <h3>{{book?.volumeInfo?.title.substring(0, 30) || 'unknown'}}</h3>
+        <p>Release Date: {{book?.volumeInfo?.publishedDate || 'unknown'}}<p>
+        <p>Authors: {{book?.volumeInfo?.authors || 'unknown'}}</p>
+    </div>
+</div>

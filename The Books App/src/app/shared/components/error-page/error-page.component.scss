@@ -1,0 +1,16 @@
+.error-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error-div p{
+    margin: 0 auto;
+}
+
+.error-img{
+    background: url('../../../../assets/images/crazyCat.gif') no-repeat center;
+    width: 100%;
+    margin: 0 auto;
+    height: 20rem;
+}
