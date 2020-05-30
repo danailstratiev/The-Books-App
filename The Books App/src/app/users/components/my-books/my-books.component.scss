@@ -1,0 +1,59 @@
+.my-books-intro{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-books-intro button{
+    width: 5rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.books-wrapper{
+    display: flex;
+    width: 80%;
+}
+
+.books-wrapper-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.books-wrapper-btns button{
+    width: 5rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.my-book{
+    width: 100%;
+}
+
+.c{
+    background: url('../../../../assets/images/focus.gif') no-repeat center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.d{
+    background: url('../../../../assets/images/redBull.gif') no-repeat center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 950px){
+    .c{
+        display: none;
+    }
+    .d{
+        display: none;
+    }
+}

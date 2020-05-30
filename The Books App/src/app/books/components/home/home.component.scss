@@ -1,0 +1,39 @@
+.search-container{
+    display: flex;
+    width: 80%;
+    margin:  auto;
+    justify-content: center;
+}
+
+.search-container form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container form input{
+    width: 50%;
+    padding: 1rem;
+}
+
+.search-container form button{
+    padding: 1rem;
+}
+
+.home-logo{
+    width: 70%;
+    height: 20rem;
+    margin: 3rem auto;
+    background: url('../../../../assets/images/books.png') no-repeat center;
+}
+
+
+@media screen and (max-width: 480px){
+    .home-logo{
+        width: 100%;
+    }
+    
+    .search-container form input{
+        width: 100%;
+    }
+}

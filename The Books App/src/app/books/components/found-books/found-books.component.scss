@@ -1,0 +1,83 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
+.current-book-wrapper{
+    cursor: pointer;
+}
+
+.current-book-wrapper:hover{
+    opacity: 0.9;
+}
+
+.ads-container{
+    width: 20%;
+    height: 32rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.a{
+    background: url('../../../../assets/images/facebook-canvas-ads-coca-cola.gif') no-repeat center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.b{
+    background: url('../../../../assets/images/colorIphones.gif') no-repeat center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.filters{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.filters div{
+    display: flex;
+    flex-direction: column;
+}
+
+.filters div select,
+.filters div button{
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    margin: 2px;
+}
+
+#filter-aggregate-btn{
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .a{
+        display: none;
+    }
+    .b{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        flex-direction: column;
+    }    
+}
+
+@media screen and (max-width: 480px){
+    .filters {
+        width: 90%;
+        flex-direction: column;
+    }
+    .filters div select{
+        text-align-last: center;
+    }
+}

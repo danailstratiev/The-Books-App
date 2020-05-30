@@ -1,0 +1,47 @@
+.book-details-section{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.book-thumbnail {
+    width: 30%;
+    margin: 0 1rem;
+}
+
+.book-thumbnail img{
+    max-width: 100%;
+}
+
+.book-info{
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    line-height: 2rem;
+}
+
+.book-info h2{
+    margin-bottom: 1rem;
+}
+
+.book-description {
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-height: 15rem ;
+    word-wrap: break-word;
+    line-height: 2rem;
+}
+
+.book-details-img{
+    min-width: 15rem;
+    min-height: 10rem;
+    margin: auto;
+}
+
+@media screen and (max-width: 826px){
+    .book-thumbnail,
+    .book-info{
+        width: 100%;
+    }
+}
+
